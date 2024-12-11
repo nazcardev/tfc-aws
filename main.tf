@@ -27,7 +27,7 @@ resource "aws_instance" "frontend_app_server" {
   key_name = "aws-mac3"
 
   tags = {
-    Name = "frontend"
+    Name = "frontend-vcs"
   }
 }
 
@@ -36,6 +36,6 @@ resource "aws_instance" "backend_app_server" {
   instance_type = "t2.micro"
   key_name = "aws-mac3"
   tags = {
-    Name = "backend"
+    Name = "backend-vcs"
   }
 }
